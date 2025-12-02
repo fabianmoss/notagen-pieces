@@ -1,0 +1,32 @@
+X:1
+%%score 1 { ( 2 4 ) | ( 3 5 ) }
+L:1/8
+Q:1/4=104
+M:6/8
+K:Ab
+V:1 treble nm="Singstimme\nVoice"
+V:2 treble nm="Pianoforte"
+V:4 treble 
+V:3 bass 
+V:5 bass 
+[V:1]"^Allegretto"!p! E|[V:2]z1|[V:3]z1|[V:4]x1|[V:5]x1|
+[V:1]c2 c c2 B|[V:2]!p! [EAc]2 [EAc] [EAc]2 [DGB]|[V:3]A,2 A, A,2 A,|[V:4]x6|[V:5]x6|
+[V:1]{B} A2 A A2 G|[V:2]{[DGB]} [CFA]2 [CFA] [CFA]2 [B,EG]|[V:3]A,2 A, A,2 A,|[V:4]x6|[V:5]x6|
+[V:1]{G} F2 F (A>G) F|[V:2][A,DF]2 [A,DF] ([FA]>[EG])[DF]|[V:3]A,2 A, A,2 A,|[V:4]x6|[V:5]x6|
+[V:1]E3- E z A|[V:2][CE]3- [CE] z A|[V:3]A,>E,C, A,, z C|[V:4]x6|[V:5]x6|
+[V:1]{A} G2 G A2 A|[V:2]{A} G2 G [EA]2 [EA]|[V:3]B,2 B, C2 C|[V:4]x6|[V:5]x6|
+[V:1]{c} B2 B c2 c|[V:2]{c} [EGB]2 [EGB] [EAc]2 [EAc]|[V:3]D2 D C2 C|[V:4]x6|[V:5]x6|
+[V:1]{c} B2 B (B>c) B|[V:2]{c} [EB]2 [EB] (B>c)B|[V:3]G,2 G, [F,A,]2 [F,A,]|[V:4]x3 =D2 D|[V:5]x6|
+[V:1](B2 e) B z B|[V:2](B2 e) B z B|[V:3][E,G,]3- [E,G,] z G,|[V:4]E3- E x2|[V:5]x6|
+[V:1]c2 c c2 c|[V:2][FBc]2 [FBc] [FAc]2 [FAc]|[V:3]A,2 A, A,2 A,|[V:4]x6|[V:5]x6|
+[V:1](!>!e2 =d) c2 c|[V:2](!>!e2 =d) [EGc]2 [EGc]|[V:3]!>!B,2 B,, E,2 E,|[V:4][FA]2 x4|[V:5]x6|
+[V:1]=B2 B (c>c) (=d/e/)|[V:2][FG=B]2 [FGB] (c>c)(=d/e/)|[V:3]=D,2 D, E,2 E,|[V:4]x3 [EG]2 [EG]|[V:5]x6|
+[V:1](fA) A G2 B|[V:2](fA)[=DA] [EG]2 [EB]|[V:3][=D,B,]2 [D,B,] [E,B,]2 G,|[V:4]x6|[V:5]x6|
+[V:1]{B} A2 A (A>G) A|[V:2]{B} [EA]2 [EA] (A>G)A|[V:3]F,2 F, F,2 F,|[V:4]x3 E2 E|[V:5]x6|
+[V:1]B2 B c2 c|[V:2][=DAB]2 [DAB] [EAc]2 [EAc]|[V:3]F,2 F, E,2 E,|[V:4]x6|[V:5]x6|
+[V:1]{e} d2 d (c>B) c|[V:2][EBd]2 [EBd] ([Ac]>[GB])[Ac]|[V:3]E,2 E, E,2 E,|[V:4]x3 E2 E|[V:5]x6|
+[V:1]B2 B A2 A|[V:2][DGB]2 [DGB] [CFA]2 A|[V:3]=E,2 E, F,2 z|[V:4]x6|[V:5]x6|
+[V:1]{A} G2 G (A>G) A|[V:2]{A} G2 G (A>G)A|[V:3][E,,E,]2 [E,,E,] [F,,F,]2 [F,,F,]|[V:4][B,D]2 [B,D] [A,C]2 [A,C]|[V:5]x6|
+[V:1][Q:1/4=96]"^T" B2[Q:1/4=88]"^T" B c2[Q:1/4=86]"^T" c|[V:2]"^cresc." [DEB]2 [DEB] [CEc]2 [CEc]|[V:3][G,,G,]2 [G,,G,] [A,,A,]2 [A,,A,]|[V:4]x6|[V:5]x6|
+[V:1]{c} B2 B (fe) G|[V:2]!f! [DFB]2 [DFB] (fe)G|[V:3][D,,D,]2 [D,,D,] [E,,E,]2 [E,,E,]|[V:4]x3 [GB]2 D|[V:5]x6|
+[V:1]A2 z z2|][V:2]A2 z z2|][V:3][A,,,A,,]2 z z2|][V:4][CE]2 x3|][V:5]x5|]
