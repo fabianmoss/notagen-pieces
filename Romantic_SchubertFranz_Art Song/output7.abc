@@ -1,0 +1,34 @@
+X:1
+%%score 1 { ( 2 4 ) | ( 3 5 ) }
+L:1/8
+Q:1/4=92
+M:6/8
+K:Bb
+V:1 treble nm="Singstimme\nVoice"
+V:2 treble nm="Pianoforte"
+V:4 treble 
+V:3 bass 
+V:5 bass 
+[V:1]"^Andantino" z|[V:2]!p! [DBd]|[V:3]"_sost." z|[V:4]x1|[V:5]x1|
+[V:1]z6|[V:2]([DBd]2 [DAc] [DGB]2 [C^FA])|[V:3]z2 z z2 D,|[V:4]x6|[V:5]x6|
+[V:1]z6|[V:2]!>(! ([B,G]2 [CD^F]!>)! [B,DG]2 [CDA])|[V:3](G,2 D, G,2 D,)|[V:4]x6|[V:5]x6|
+[V:1]z2 z z2!p! d|[V:2]!<(! [B,DB]2 [EGc]!<)!!>(! [DGB]2 [C^FA]!>)!|[V:3]G,2 C, D,2 D,,|[V:4]x6|[V:5]x6|
+[V:1]d2 c B2 A|[V:2]!p! ([B,G]2 [CD^F] [B,DG]2 [CDF])|[V:3]G,,6|[V:4]x6|[V:5]x6|
+[V:1]G3- G z d|[V:2]!<(! ([B,DG]2 [CD^F]!<)!!>(! [B,DG]2 [DGB])!>)!|[V:3]G,,6|[V:4]x6|[V:5]x6|
+[V:1]e2 d c2 (B/c/)|[V:2]!>(! ([EGc]2 [DFB] [CEA]2!>)! [EAc])|[V:3]G,,3 F,,3|[V:4]x6|[V:5]x6|
+[V:1]d3 z2 d|[V:2]!<(! ([DFB]2 [FAc]!<)!!>(! [FBd]2 [DFB])!>)!|[V:3]B,,6|[V:4]x6|[V:5]x6|
+[V:1](dc) c (ce) d|[V:2]!<(! [CGB]2 [CGB]!<)!!>(! [CFA]2 [DFB]!>)!|[V:3]E,2 =E, F,2 F,|[V:4]x6|[V:5]x6|
+[V:1](c2 ^c) d2 (d/=c/)|[V:2]!<(! ([CGB]2 [^CGB]!<)!!>(! [DFB]2 [DFB])!>)!|[V:3]E,2 =E, F,2 F,|[V:4]x6|[V:5]x6|
+[V:1](B>A) (B/d/) f3/2 e/ d/c/|[V:2][CGB]2 [CGB] [CFA]2 [CFA]|[V:3]E,2 E, F,2 F,|[V:4]x6|[V:5]x6|
+[V:1](B3 d) z d|[V:2]([D-FB]3 [DFd]) z z|[V:3](B,,3 B,) z z|[V:4]x6|[V:5]x6|
+[V:1]!mf!!>(! (d>c)!>)! c!>(! (c>B)!>)!!p! B|[V:2]!mf!!>(! [EAc]3!>)! [DGB]3|[V:3]^F,3 G,3|[V:4]x6|[V:5]x6|
+[V:1]!>(! (B>A)!>)! A A z!pp! A|[V:2]!pp!!>(! [=EGA]3!>)! [D^FA]3|[V:3]^C,3 D,3|[V:4]x6|[V:5]x6|
+[V:1]_A2 A G G (=A/G/)|[V:2]!pp!!>(! [DF_A]3!>)! [D=EG]3|[V:3]=B,,3 C,3|[V:4]x6|[V:5]x6|
+[V:1]^F2 z z2!mf! d|[V:2]!<(! [CD^F]2 [B,DG]!<)!!>(! [CDA]2 [CD]!>)!|[V:3]D,3 D,2 ^F,|[V:4]x5 D|[V:5]x3 ^F,,2 D,,|
+[V:1]d2 c B2 d|[V:2]!mf! (D2 ^F G2 D)|[V:3]G,,/D,/G,/D,/A,/D,/ G,,/D,/G,/D,/B,/D,/|[V:4]B,2 C B,2 B,|[V:5]x6|
+[V:1](fe) d c2 c|[V:2](DEF F2 F)|[V:3]F,,/B,,/A,/B,,/B,/B,,/ F,,/C,/F,/C,/A,/C,/|[V:4]B,CD A,2 A,|[V:5]x6|
+[V:1]!>(! d2!>)! A!p! B3/2!<(! B/ B|[V:2]!>(! ([CD^F]3!>)!!p! [B,DG]3)|[V:3]D,,/D,/^F,/D,/A,/D,/ G,,/D,/G,/D,/G,/D,/|[V:4]x6|[V:5]x6|
+[V:1]^c3/2 c/!<)!!>(! c!>)! d2!pp! d|[V:2]!>(! ([B,^CG]3!>)!!pp! [A,D^F]2) z|[V:3]=E,,/^C,/=E,/C,/G,/C,/ D,,2 z|[V:4]x6|[V:5]x6|
+[V:1]G2 z z2 z|[V:2]!pp! ([B,DG]2 [CD^F] [B,DG]2 [CDA])|[V:3]"_sotto voce." (G,,2 D, G,2 D,)|[V:4]x6|[V:5]x6|
+[V:1]z6|[V:2]!<(! ([B,DB]2 [CEGc]!<)!!>(! [B,DGB]2 [A,C^FA])!>)!|[V:3]G,2 C, D,2 D,,|[V:4]x6|[V:5]x6|
+[V:1]z6:|[V:2][G,B,DG]3- [G,B,DG]2 z:|[V:3]G,,,3- G,,,2 z:|[V:4]x6:|[V:5]x6:|
