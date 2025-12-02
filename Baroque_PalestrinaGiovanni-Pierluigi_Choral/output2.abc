@@ -1,0 +1,41 @@
+X:1
+%%score [ 1 2 3 4 ]
+L:1/8
+Q:1/4=60
+M:4/4
+K:Bb
+V:1 treble nm="S"
+V:2 treble nm="A"
+V:3 treble-8 nm="T"
+V:4 bass nm="B"
+[V:1]"^Andante" d|[V:2]B|[V:3]f|[V:4]B,|
+[V:1]d2 z d f2 z f|[V:2]B2 z B c2 z c|[V:3]f2 z f f2 z f|[V:4]B,2 z B, A,2 z A,|
+[V:1]b2 b2 (ba) z a|[V:2]d2 d2 (dc) z c|[V:3]f2 f2 f2 z f|[V:4]G,2 B,2 F,2 z F,|
+[V:1](ad) g2 gc f2-|[V:2]B2 BB A3 A|[V:3]f2 =ed e2 fA|[V:4]B,2 B,B, A,3 D|
+[V:1]fg/a/ T=e>f f2 z a/e/|[V:2]G2- G/A/B A2 z c|[V:3]dB c2 c2 z f|[V:4]B,G,CC, F,2 z F,|
+[V:1]f/=e/d/c/ B2 z4|[V:2]d2 d2 z4|[V:3]f2 f2 z4|[V:4]B,2 B,2 z4|
+[V:1][M:6/8]"^Allegro" dcB f2 B|[V:2][M:6/8] z6|[V:3][M:6/8] z6|[V:4][M:6/8] z6|
+[V:1]Tg3 f2 z|[V:2]z6|[V:3]z6|[V:4]z6|
+[V:1]z6|[V:2]z6|[V:3]fed b2 d|[V:4]z6|
+[V:1]z6|[V:2]z6|[V:3]Tb3 a2 z|[V:4]z6|
+[V:1]agf c'2 f|[V:2]c2 c c2 c|[V:3]z6|[V:4]z6|
+[V:1]b2 =e a2 d|[V:2]d2 c c2 B|[V:3]z6|[V:4]z6|
+[V:1]g2 c f2 g|[V:2]B2 A A2 G|[V:3]z6|[V:4]z6|
+[V:1]=e2 f Tf>ge|[V:2]G2 A G2 B|[V:3]z6|[V:4]z6|
+[V:1]f2 z z2 z|[V:2]A2 z z2 z|[V:3]f=ed c2 f|[V:4]F,2 F, F,2 F,|
+[V:1]z6|[V:2]z6|[V:3]TB3 A2 d|[V:4]G,2 =E, F,2 B,|
+[V:1]z6|[V:2]z6|[V:3]c2 f Tf>g=e|[V:4]A,2 F, C2 C,|
+[V:1]z2 z z2 d|[V:2]z2 z z2 F|[V:3]f2 z z2 d|[V:4]F,2 z z2 B,|
+[V:1]d2 e f3-|[V:2]F2 F F2 F|[V:3]d2 c =B2 c|[V:4]B,2 _A, G,2 =A,|
+[V:1]fed e2 e|[V:2]G2 G G2 G|[V:3]d2 d c2 e|[V:4]=B,2 G, C2 C|
+[V:1]efd e2 e|[V:2]A2 G G2 G|[V:3]f2 d c2 c|[V:4]=B,2 B, C2 C|
+[V:1]efd e2 e|[V:2]_A2 G G2 G|[V:3]f2 d c2 c|[V:4]=B,2 B, C2 C|
+[V:1]e2 d c2 f|[V:2]A2 B F2 A|[V:3]f2 f f2 f|[V:4]F,2 G, A,2 F,|
+[V:1]Td2 z z2 z|[V:2]B2 z z2 z|[V:3]f2 z z2 z|[V:4]B,2 z z2 z|
+[V:1]gfe dcB|[V:2]B2 B B2 B|[V:3]e2 e e2 e|[V:4]E,2 E, E,2 E,|
+[V:1]a2 b B>cd|[V:2]c2 B G2 G|[V:3]e2 f e2 d|[V:4]E,2 D, E,2 B,,|
+[V:1]Tc2 B B>cA|[V:2]F2 F F2 F|[V:3]Te2 d c2 e|[V:4]F,2 F, F,2 F,|
+[V:1]B2 z z2 z|[V:2]F2 z z2 z|[V:3]d2 z z2 z|[V:4]B,,2 z z2 z|
+[V:1][M:4/4]"^Adagio" d4 c4|[V:2][M:4/4] F2 G2 G2 F2|[V:3][M:4/4] B2 d2 e2 c2|[V:4][M:4/4] B,4 A,4|
+[V:1]B2 b4 a2|[V:2]G2 d2 c4|[V:3]d2 f2 g2 f2|[V:4]G,2 D,2 E,2 F,2|
+[V:1]!fermata!b8|][V:2]!fermata!d8|][V:3]!fermata!f8|][V:4]!fermata!B,,8|]

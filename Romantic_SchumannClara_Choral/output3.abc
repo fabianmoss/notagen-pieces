@@ -1,0 +1,45 @@
+X:1
+%%score [ 1 2 3 4 ]
+L:1/8
+Q:1/4=60
+M:6/8
+K:E
+V:1 treble nm="S"
+V:2 treble nm="A"
+V:3 treble-8 nm="T"
+V:4 bass nm="B"
+[V:1]"^Andante"!p! B|[V:2]!p! E|[V:3]!p! G|[V:4]!p! E,|
+[V:1]B2 G E2 F|[V:2]E2 B, B,2 D|[V:3]G2 B G2 B|[V:4]E,2 E, E,2 B,,|
+[V:1]!>!G3 E z G|[V:2]!>!D3 E z E|[V:3]!>!B3 B z B|[V:4]!>!B,,3 E, z E,|
+[V:1]!<(! (A>B) c!<)! B2 G|[V:2]!<(! E2 E!<)! E2 E|[V:3]!<(! c2 A!<)! G2 B|[V:4]!<(! E,2 E,!<)! E,2 E,|
+[V:1]F3- F z!p! B,|[V:2]D3- D z!p! B,|[V:3]B3- B z!p! B|[V:4]B,,3- B,, z!p! B,,|
+[V:1]C2 D (E>D) E|[V:2]^A,2 =A, (G,>B,) E|[V:3]^A2 =A (G>B) B|[V:4]B,,2 B,, (E,>G,) G,|
+[V:1]!<(! (G2 F)!<)! E2!pp! G|[V:2]!<(! D3!<)! E2!pp! E|[V:3]!<(! B3!<)! B2!pp! B|[V:4]!<(! (B,2 A,)!<)! G,2!pp! E,|
+[V:1]^A2 G (F>G) F|[V:2]E2 E E2 E|[V:3]c2 B (^A>B) A|[V:4]C,2 C, F,2 F,|
+[V:1]B3- B z z|[V:2]D3- D z z|[V:3]B3- B z z|[V:4]B,,3- B,, z z|
+[V:1]!pp! F3/2 F/ F B2 B|[V:2]!pp! =D3/2 D/ D D2 D|[V:3]!pp! B3/2 B/ B F2 F|[V:4]!pp! B,,3/2 B,,/ B,, B,,2 B,,|
+[V:1]=G3 F2 F|[V:2]C3 =D2 D|[V:3]E3 F2 F|[V:4]B,,3 B,,2 B,,|
+[V:1]E2 E (=D>C) B,|[V:2]C2 C (B,>^A,) B,|[V:3]=G2 G (^E>F) ^G|[V:4]B,,2 B,, B,,2 B,,|
+[V:1]C3- C z!mf! F|[V:2]C3- C z!mf! F|[V:3]^A3- A z!mf! F|[V:4]F,,3- F,, z!mf! F,|
+[V:1]e2 d (c>B) ^A|[V:2]E2 E E2 E|[V:3]c2 B (^A>B) c|[V:4]^A,,2 B,, (C,>D,) E,|
+[V:1]!>(! (B2 ^B)!>)! c2!p! A|[V:2]!>(! (F2 A)!>)! G2!p! F|[V:3]!>(! B3!>)! B2!p! c|[V:4]!>(! (D,3!>)! E,2)!p! A,,|
+[V:1]G2 G (B>A) F|[V:2]E2 E D2 D|[V:3]B2 B (G>F) A|[V:4]B,,2 B,, B,,2 B,,|
+[V:1]E3- E z z|[V:2]E3- E z z|[V:3]G3- G z z|[V:4]E,3- E, z z|
+[V:1]!p! F>FF G>GG|[V:2]!p! D>DD ^E>EE|[V:3]!p! B>BB B>BB|[V:4]!p! B,>B,B, G,>G,G,|
+[V:1]B3 ^A2 z|[V:2]E3 E2 z|[V:3]c3 c2 z|[V:4]F,3 F,2 z|
+[V:1]B>BB"^cresc." (c>B) c|[V:2]D>DD"^cresc." F2 F|[V:3]B>BB"^cresc." ^A2 A|[V:4]F,>F,F,"^cresc." E,2 E,|
+[V:1]d3- d z!p! d|[V:2]F3- F z!p! F|[V:3]B3- B z!p! B|[V:4]D,3- D, z!p! B,,|
+[V:1](dc) B (B^A) G|[V:2]F2 F ^E2 E|[V:3](B^A) G (Gc) B|[V:4]B,,2 B,, C,2 C,|
+[V:1]!>(! G3!>)! F2 F|[V:2]!>(! ^E3!>)! F2 F|[V:3]!>(! B3!>)! ^A2 A|[V:4]!>(! C,3!>)! C,2 C,|
+[V:1]B2 ^A (G>A) G|[V:2]^E2 E E2 E|[V:3]G2 c (B>c) B|[V:4]C,2 C, C,2 C,|
+[V:1]F3- F z!pp! F|[V:2]F3- F z!pp! C|[V:3]^A3- A z!pp! A|[V:4]F,3- F, z!pp! F,|
+[V:1]=G2 G (G>F) E|[V:2]C2 C C2 C|[V:3]^A2 A A2 A|[V:4]E,2 E, E,2 E,|
+[V:1]B3 F2 F|[V:2]D3 D2 D|[V:3]A3 A2 A|[V:4]D,3 D,2 D,|
+[V:1]"^cresc." =G2 G (G>F) E|[V:2]"^cresc." C2 C C2 C|[V:3]"^cresc." ^A2 A A2 A|[V:4]"^cresc." E,2 E, E,2 E,|
+[V:1]B3- B z!f! B|[V:2]D3- D z!f! E|[V:3]A3- A z!f! G|[V:4]D,3- D, z!f! E,|
+[V:1]G2 F (E>G) B|[V:2]E2 D (E>E) E|[V:3]B2 A (G>B) =d|[V:4]E,2 E, (E,>E,) E,|
+[V:1]!>(! (e2 c)!>)! A2!p! F|[V:2]!>(! E3!>)! E2!p! C|[V:3]!>(! (c2 A)!>)! c2!p! A|[V:4]!>(! A,,3!>)! A,,2!p! A,,|
+[V:1]B2 E (GF) D|[V:2]E2 E D2 B,|[V:3]G2 G (BA) A|[V:4]B,,2 B,, B,,2 B,,|
+[V:1]E6-|[V:2]B,2 B, C2 A,|[V:3]G2 G A2 F|[V:4]E,6-|
+[V:1]E6-|[V:2]B,2 B, (A,>G,) A,|[V:3]G2 G (F>E) F|[V:4]E,6-|
+[V:1]!fermata!E6|][V:2]!fermata!B,6|][V:3]!fermata!G6|][V:4]!fermata!E,6|]
