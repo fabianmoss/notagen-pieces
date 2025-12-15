@@ -8,22 +8,8 @@ def setup(render: str = None):
     # create an introduction
 
     welcome = Text(
-        text="Welcome to our experiment.<br>"
-        + "You will have to react to the color of a word.<br>"
-        + "Press SPACE to continue",
-        choices=[" "],
+        text="Welcome to our experiment.<br>You will have to react to the color of a word"
     )
-    instruction_red = Text(
-        text="If the ink color is <b>red<b>,"
-        + "press <b>f<b>with your left index finger as fast as possible."
-    )
-    instruction_green = Text(
-        text="If the ink color is <b>green<b>,"
-        + "press <b>j<b>with your left index finger as fast as possible."
-    )
-
-    # Creating the stimulus sequence
-    instructions_sequence = [welcome, instruction_red, instruction_green]
 
     introduction_stimulus = Text(  # duration= 4000,
         text="Welcome to our experiment!<br>"
