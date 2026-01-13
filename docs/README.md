@@ -1,5 +1,7 @@
 # Experiment
 
+Experiment built with [jsPsych](https://www.jspsych.org/latest/).
+
 ## convert xml to wav 
 
 ```bash
