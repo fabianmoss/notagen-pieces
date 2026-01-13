@@ -2,29 +2,51 @@
 <html>
   <head>
     <title>The Musical Turing Test</title>
+    <!-- JSpsych core and plugins -->
     <script src="https://unpkg.com/jspsych@8.2.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.1.0"></script>
     <script src="https://unpkg.com/@jspsych/plugin-audio-keyboard-response@2.1.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@2.1.0"></script>
     <link href="https://unpkg.com/jspsych@8.2.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+
     <style>
-      body {
-        font-family: Arial, sans-serif;
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        background-color: #DFF6E4; /* pastel mint */
+        color: #333333;
       }
+
+      .jspsych {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
       .jspsych-content {
         font-size: 3em;
+        text-align: center;
+        padding: 2em;
+        box-sizing: border-box;
       }
     </style>
   </head>
+
   <body>
     <script>
-      // Initialize jsPsych with on_finish
+      // --- Initialize jsPsych ---
+      var timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+
       var jsPsych = initJsPsych({
         on_finish: function() {
-          // Debug: show all trial responses in console
+          // debug output
           console.table(
             jsPsych.data.get()
               .filter({ trial_type: 'audio-keyboard-response' })
-              .select(['stimulus', 'response', 'correct', 'rt'])
+              .select(['stimulus', 'response', 'correct', 'participant_id', 'rt'])
               .values()
           );
         }
@@ -35,7 +57,7 @@
       // --- Welcome ---
       timeline.push({
         type: jsPsychHtmlKeyboardResponse,
-        stimulus: "Welcome to the experiment. Press any key to begin."
+        stimulus: "<h1>The Musical Turing Test</h1><p>Press any key to begin.</p>"
       });
 
       // --- Instructions ---
@@ -44,7 +66,7 @@
         stimulus: `
           <h2>Welcome to the experiment!</h2>
           <p>-----------------------------------------------------------</p>
-          <p>You will hear a few short chorale phrases with a harpsichord sound.</p>
+          <p>You will hear a few short musical phrases with a harpsichord sound.</p>
           <p>If you think the music was composed by a <strong>Human</strong>, press <strong>H</strong>.</p>
           <p>If you think the music was composed by <strong>Artificial Intelligence</strong>, press <strong>A</strong>.</p>
           <p>Press any key to begin.</p>
@@ -106,7 +128,7 @@
       // Shuffle
       var shuffled_files = jsPsych.randomization.shuffle(audio_files);
 
-      // --- Create trials ---
+      // --- Audio trials ---
       for (let i = 0; i < shuffled_files.length; i++) {
         let trial_info = shuffled_files[i];
         timeline.push({
@@ -114,37 +136,56 @@
           stimulus: trial_info.file,
           choices: ["a","h"],
           prompt: `
-            <p>Was this composed by a human (<strong>H</strong>) or by artificial intelligence (<strong>A</strong>)?</p>
+            <p>Was this composed by a human (<strong>H</strong>) or AI (<strong>A</strong>)?</p>
             <p style="margin-top:10px; font-weight:bold;">Trial ${i+1} / ${shuffled_files.length}</p>
           `,
-          data: { correct: trial_info.label, label:trial_info.label },
+          data: function() {
+            return {
+              correct: trial_info.label,
+              timestamp: timestamp
+            };
+          },
           response_ends_trial: true
         });
       }
 
       // --- Final screen ---
-      timeline.push({
+      var final_screen = {
         type: jsPsychHtmlKeyboardResponse,
         stimulus: function() {
           const trials = jsPsych.data.get()
-            .filter({ trial_type: 'audio-keyboard-response' })
-            .values(); // plain array
+            .filter({trial_type:'audio-keyboard-response'})
+            .values();
 
           const correct_trials = trials.filter(t => t.response?.toLowerCase() === t.correct?.toLowerCase()).length;
           const total_trials = trials.length;
           const accuracy = Math.round((correct_trials / total_trials) * 100);
 
+          // Save CSV including participant_id
+          const csv = jsPsych.data.get()
+            .filter({trial_type:'audio-keyboard-response'})
+            .csv();
+
+          const blob = new Blob([csv], {type:"text/csv"});
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = `results_${timestamp}.csv`
+          a.click();
+          URL.revokeObjectURL(url);
+
           return `
             <h2>Thank you for participating!</h2>
             <p>Your score: ${correct_trials} / ${total_trials} (${accuracy}%) correct</p>
+            <p>Your results have been saved.</p>
             <p>Press any key to finish.</p>
           `;
         }
-      });
+      };
+      timeline.push(final_screen);
 
-      // --- Run the experiment ---
+      // --- Run experiment ---
       jsPsych.run(timeline);
     </script>
   </body>
 </html>
-
