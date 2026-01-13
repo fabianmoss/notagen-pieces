@@ -27,8 +27,8 @@
 var audio_files = [];
 
 // Add human files
-// var human_files = ["data/H/file1.wav", "data/H/file2.wav"];
-// human_files.forEach(f => audio_files.push({file: f, label: "H"}));
+var human_files = ["data/H/BWV 122.6-4.wav", "data/H/BWV 148.6-6.wav"];
+human_files.forEach(f => audio_files.push({file: f, label: "H"}));
 
 // Add AI files
 var ai_files = [
@@ -52,14 +52,14 @@ ai_files.forEach(f => audio_files.push({file: f, label: "A"}));
     stimulus: 
       `<h2>Welcome to the experiment!</h2>
       <p>-----------------------------------------------------------</p>
-<p>You will hear a few short chorale phrases</p>
-<p>with a harpsichord sound.</p>
-<p>If you think that the music was composed by a <strong>Human</strong>,
-press <strong>H</strong>.
-<br/>
-<p>If you think that the music was composed by <strong>Artificial Intelligence</strong>, 
-press <strong>A</strong>.
-<br>
+    <p>You will hear a few short chorale phrases</p>
+    <p>with a harpsichord sound.</p>
+    <p>If you think that the music was composed by a <strong>Human</strong>,
+    press <strong>H</strong>.
+    <br/>
+    <p>If you think that the music was composed by <strong>Artificial Intelligence</strong>, 
+    press <strong>A</strong>.
+    <br>
     <p>Press any key to begin.</p>`
   };
   timeline.push(instructions);
