@@ -1,0 +1,15 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'poster.blg'
+[149] biber:340> INFO - === Do Aug 24, 2023, 08:18:53
+[178] Biber.pm:418> INFO - Reading 'poster.bcf'
+[293] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[316] Biber.pm:4401> INFO - Processing section 0
+[334] Biber.pm:4592> INFO - Looking for bibtex file 'references.bib' for section 0
+[338] bibtex.pm:1713> INFO - LaTeX decoding ...
+[349] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[419] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[419] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[419] Biber.pm:4221> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[419] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[421] bbl.pm:654> INFO - Writing 'poster.bbl' with encoding 'UTF-8'
+[423] bbl.pm:757> INFO - Output to poster.bbl

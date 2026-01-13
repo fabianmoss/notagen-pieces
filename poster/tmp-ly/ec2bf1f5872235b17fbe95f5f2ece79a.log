@@ -1,0 +1,216 @@
+Changing working directory to: `tmp-ly'
+Processing `/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly'
+Parsing...
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:1: error: unknown escaped string: `\ProvidesFile'
+
+\ProvidesFile{umsa.fd}    [2013/01/14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:1: error: string outside of text script or \lyricmode
+
+\ProvidesFile{umsa.fd}    [2013/01/14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:15: error: not a note name: umsa
+\ProvidesFile{
+              umsa.fd}    [2013/01/14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:19: error: syntax error, unexpected '.'
+\ProvidesFile{umsa
+                  .fd}    [2013/01/14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:20: error: not a note name: fd
+\ProvidesFile{umsa.
+                   fd}    [2013/01/14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:28: error: syntax error, unexpected FRACTION
+\ProvidesFile{umsa.fd}    [
+                           2013/01/14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:36: error: not a duration
+\ProvidesFile{umsa.fd}    [2013/01/
+                                   14 v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:39: error: not a note name: v
+\ProvidesFile{umsa.fd}    [2013/01/14 
+                                      v3.01 AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:45: error: not a note name: AMS
+\ProvidesFile{umsa.fd}    [2013/01/14 v3.01 
+                                            AMS symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:49: error: not a note name: symbols
+\ProvidesFile{umsa.fd}    [2013/01/14 v3.01 AMS 
+                                                symbols A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:61:57: error: not a note name: A
+\ProvidesFile{umsa.fd}    [2013/01/14 v3.01 AMS symbols 
+                                                        A]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:62:1: error: unknown escaped string: `\DeclareFontFamily'
+
+\DeclareFontFamily{U}{msa}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:62:1: error: string outside of text script or \lyricmode
+
+\DeclareFontFamily{U}{msa}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:62:20: error: not a note name: U
+\DeclareFontFamily{
+                   U}{msa}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:62:23: error: not a note name: msa
+\DeclareFontFamily{U}{
+                      msa}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:63:1: error: unknown escaped string: `\DeclareFontShape'
+
+\DeclareFontShape{U}{msa}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:63:1: error: string outside of text script or \lyricmode
+
+\DeclareFontShape{U}{msa}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:63:19: error: not a note name: U
+\DeclareFontShape{
+                  U}{msa}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:63:22: error: not a note name: msa
+\DeclareFontShape{U}{
+                     msa}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:63:27: error: not a note name: m
+\DeclareFontShape{U}{msa}{
+                          m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:63:30: error: not a note name: n
+\DeclareFontShape{U}{msa}{m}{
+                             n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:64:7: warning: Dropping unattachable FingeringEvent
+     <
+      -6>msam5%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:64:10: error: not a note name: msam
+     <-6>
+         msam5%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:64:14: error: not a duration
+     <-6>msam
+             5%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:65:6: error: syntax error, unexpected UNSIGNED
+    <
+     6-8>msam7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:65:6: error: not a duration
+    <
+     6-8>msam7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:65:9: error: syntax error, unexpected >
+    <6-8
+        >msam7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:65:10: error: not a note name: msam
+    <6-8>
+         msam7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:65:14: error: not a duration
+    <6-8>msam
+             7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:66:6: error: syntax error, unexpected UNSIGNED
+    <
+     8->msam10%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:66:9: error: not a note name: msam
+    <8->
+        msam10%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:66:13: error: not a duration
+    <8->msam
+            10%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:68:1: error: unknown escaped string: `\endinput'
+
+\endinput
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:68:1: error: string outside of text script or \lyricmode
+
+\endinput
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:1: error: unknown escaped string: `\ProvidesFile'
+
+\ProvidesFile{umsb.fd}    [2013/01/14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:1: error: string outside of text script or \lyricmode
+
+\ProvidesFile{umsb.fd}    [2013/01/14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:15: error: not a note name: umsb
+\ProvidesFile{
+              umsb.fd}    [2013/01/14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:19: error: syntax error, unexpected '.'
+\ProvidesFile{umsb
+                  .fd}    [2013/01/14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:20: error: not a note name: fd
+\ProvidesFile{umsb.
+                   fd}    [2013/01/14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:28: error: syntax error, unexpected FRACTION
+\ProvidesFile{umsb.fd}    [
+                           2013/01/14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:36: error: not a duration
+\ProvidesFile{umsb.fd}    [2013/01/
+                                   14 v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:39: error: not a note name: v
+\ProvidesFile{umsb.fd}    [2013/01/14 
+                                      v3.01 AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:45: error: not a note name: AMS
+\ProvidesFile{umsb.fd}    [2013/01/14 v3.01 
+                                            AMS symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:49: error: not a note name: symbols
+\ProvidesFile{umsb.fd}    [2013/01/14 v3.01 AMS 
+                                                symbols B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:99:57: error: not a note name: B
+\ProvidesFile{umsb.fd}    [2013/01/14 v3.01 AMS symbols 
+                                                        B]
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:100:1: error: unknown escaped string: `\DeclareFontFamily'
+
+\DeclareFontFamily{U}{msb}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:100:1: error: string outside of text script or \lyricmode
+
+\DeclareFontFamily{U}{msb}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:100:20: error: not a note name: U
+\DeclareFontFamily{
+                   U}{msb}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:100:23: error: not a note name: msb
+\DeclareFontFamily{U}{
+                      msb}{}
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:101:1: error: unknown escaped string: `\DeclareFontShape'
+
+\DeclareFontShape{U}{msb}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:101:1: error: string outside of text script or \lyricmode
+
+\DeclareFontShape{U}{msb}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:101:19: error: not a note name: U
+\DeclareFontShape{
+                  U}{msb}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:101:22: error: not a note name: msb
+\DeclareFontShape{U}{
+                     msb}{m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:101:27: error: not a note name: m
+\DeclareFontShape{U}{msb}{
+                          m}{n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:101:30: error: not a note name: n
+\DeclareFontShape{U}{msb}{m}{
+                             n}{%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:102:7: warning: Dropping unattachable FingeringEvent
+     <
+      -6>msbm5%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:102:10: error: not a note name: msbm
+     <-6>
+         msbm5%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:102:14: error: not a duration
+     <-6>msbm
+             5%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:103:6: error: syntax error, unexpected UNSIGNED
+    <
+     6-8>msbm7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:103:6: error: not a duration
+    <
+     6-8>msbm7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:103:9: error: syntax error, unexpected >
+    <6-8
+        >msbm7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:103:10: error: not a note name: msbm
+    <6-8>
+         msbm7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:103:14: error: not a duration
+    <6-8>msbm
+             7%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:104:6: error: syntax error, unexpected UNSIGNED
+    <
+     8->msbm10%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:104:9: error: not a note name: msbm
+    <8->
+        msbm10%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:104:13: error: not a duration
+    <8->msbm
+            10%
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:106:1: error: unknown escaped string: `\endinput'
+
+\endinput
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:106:1: error: string outside of text script or \lyricmode
+
+\endinput
+/home/fmoss/GitHub/fabianmoss/research_plan/tex_poster_and_slides/tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly:107:1: error: syntax error, unexpected end of input
+
+%%}
+Layout output to `ec2bf1f5872235b17fbe95f5f2ece79a.eps'...
+Converting to `ec2bf1f5872235b17fbe95f5f2ece79a.pdf'...
+Writing ec2bf1f5872235b17fbe95f5f2ece79a-systems.texi...
+Writing ec2bf1f5872235b17fbe95f5f2ece79a-systems.tex...
+Writing ec2bf1f5872235b17fbe95f5f2ece79a-systems.count...
+fatal error: failed files: "tmp-ly/ec2bf1f5872235b17fbe95f5f2ece79a.ly"

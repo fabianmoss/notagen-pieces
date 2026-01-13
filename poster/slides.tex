@@ -1,0 +1,360 @@
+\documentclass[aspectratio=169]{beamer}
+% remove aspectratio=169 for the standard 4:3 layout
+
+% use the metropolis theme
+\usetheme[
+  progressbar=frametitle, % head
+  numbering=fraction
+  ]{metropolis}
+% see metropolis package for more options
+% dark theme must be set after the metroepfl package is loaded (see below)
+
+% use the epfl color theme
+% defines epfl{gray,darkgray,lightgray,red,blue}
+% this usepackage is optional, as it is also done by metroepfl
+\usepackage{epflcolors}
+% metropolis theme based on gemini and epflcolors
+\usepackage{metroepfl}
+% \metroset{background=dark}
+
+\usepackage{transparent}
+\usepackage{fontawesome5} % icons
+
+%% FOOTER
+\setbeamertemplate{footline}{%    
+  \begin{beamercolorbox}[wd=\paperwidth, sep=1ex]{footline}% <- default 3ex
+    \usebeamerfont{page number in head/foot}%
+    \usebeamertemplate*{frame footer}%  
+    \textbf{\insertshorttitle} \;|\;
+    \textbf{Fabian C. Moss} \;|\;
+    %\faIcon{envelope} \, \textbf{fabian.moss@uva.nl} 
+    \faIcon{twitter} \, \textbf{@fabianmoss}%
+    \hfill
+    \textbf{\usebeamertemplate*{frame numbering}}
+  \end{beamercolorbox}
+}
+
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamercolor{footline}{fg=white, bg=uva-zwart}
+\makeatother
+\setbeamertemplate{frame footer}{
+  \insertsection\quad
+  \insertsubsection\quad
+  \insertsubsubsection
+}
+
+%% references
+\usepackage[
+            natbib, 
+            backend=biber, 
+            % maxcitenames=3,
+            % maxbibnames=50,
+            style=apa,
+            % citestyle=numeric-comp,
+            doi=true,
+            % sorting=none,
+            isbn=false,
+            % backref=false
+            ]{biblatex}
+\bibliography{references.bib}
+
+\usepackage[
+  program=/usr/bin/lilypond,
+  staffsize=24
+  ]{lyluatex}
+
+
+\title{Research Plan}
+\subtitle{Cultural Analytics, Corpus Studies, Empirical Music Theory}
+\author{Fabian C. Moss}
+\institute{University of Amsterdam}
+\date{\today}
+% \logo{\includegraphics[width=.2\linewidth]{../beamerthemeUniversityOfAmsterdam/logo/uva_logo_ENG.pdf}}
+
+%% set width of progress bar
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{2pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{2pt}
+\makeatother
+
+% have table of contents enumerated
+\setbeamertemplate{section in toc}{
+  \textbf{\alert{\inserttocsectionnumber.}}\quad\inserttocsection\par
+}
+\setbeamertemplate{subsection in toc}{
+  \hspace{1em}
+  \textcolor{uva-rood}{\inserttocsectionnumber.\inserttocsubsectionnumber}\quad
+  \inserttocsubsection\par
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Overview}
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+\end{frame}
+
+%%%%% NEW: ORGANIZED AS RESEARCH THEMES %%%%%%%
+
+{
+\usebackgroundtemplate{\transparent{0.4}\includegraphics[width=\paperwidth]{img/books.jpg}}
+\section{Digital Humanities and Cultural Analytics}
+}
+
+\begin{frame}{}
+  \begin{quote}
+    How can we preserve the rich cultural heritage of the past? How can we make it accessible for anyone? Which tools do we need to enable everyone to engage with these treasures?
+  \end{quote}
+\end{frame}
+
+\begin{frame}{Projects at UvA}
+
+  \begin{exampleblock}{Present}
+    \begin{itemize}
+      \item Covid19 Communities
+      \item CREATE
+    \end{itemize}	    
+  \end{exampleblock}
+
+  \begin{alertblock}{Future}
+    \begin{itemize}
+      \item analysis of \alert{SoundCloud} platform, e.g. with Bernhard Rieder, Anne Helmond, Ashley Burgoyne...
+      \item \texttt{r/musictheory} reddit
+      \item \texttt{\#musicscience}/\texttt{\#musictheory} twitter
+    \end{itemize}
+  \end{alertblock}
+
+\end{frame}
+
+{
+\usebackgroundtemplate{\transparent{0.4}\includegraphics[width=\paperwidth]{img/birds.jpg}}
+\section{Corpus Studies and Stylometry}
+}
+
+\begin{frame}{Corpus Studies and Stylometry}
+  \begin{quote}
+    Which patterns do emerge when we move from analyzing individual cultural artefacts to collections? Can we create datasets that are reprentative for a certain historical period or style? Is it possible to observe trajectories that allow us to speak of cultural evolution?
+  \end{quote}
+\end{frame}
+
+\begin{frame}{Corpus Studies and Stylometry}
+  \begin{itemize}
+    \item Shuxin Meng (Lausanne): Chinese folk music project
+    \item Philippine Des Courtils (Lausanne): Classification of Baroque composer styles
+    \item Mathis Trutnau (Cologne): Harmony in Jazz
+    \end{itemize}
+\end{frame}
+
+{
+\usebackgroundtemplate{\transparent{0.4}\includegraphics[width=\paperwidth]{img/pattern.jpg}}
+\section{Music Theory and Analysis}
+}
+
+\begin{frame}{Music Theory and Analysis}
+  \begin{quote}
+    Which underlying structural relations can be identified in a musical composition? How can these structures be described precisely, using mathematical and formal models? Can we measure music? Which intricate aspects of a piece appear remarkable?
+    % Computation / Machine Learning / AI?
+  \end{quote}
+\end{frame}
+
+\begin{frame}{Music Theory and Analysis}
+  \begin{itemize}
+    \item Rework earlier music-theory work for book chapter (by end February) (Riemann)
+    \item Wrap-up of CROSS project (by end March)
+    \begin{itemize}
+      \item musicology paper with Maik Köster (Cologne) 
+      \item digital humanities paper with Colline Métrailler, François Bavaud (Lausanne)
+      \item project report
+    \end{itemize}
+    % \item[] Distant Listening Results, insbesondere fokussiert auf large-scale historische Analysen. Dabei zurückgreifen auf Analysen der Diss und diese erweitern/ergänzen
+    \item big-data project on musical spaces with Robert Lieck (Durham) (TBD)
+    \item Giovanni Affatato (Milano): interactive music analysis tool \url{https://dcmlab.github.io/MIDFT/}
+    \item Roberto Goelzer (Lausanne): Automatic rhythm generation
+  \end{itemize}
+
+  \begin{itemize}
+		\item Workshop ``Representing Harmony: Goals and Challenges (Lausanne, 2022?)''
+		\item MEI Guidelines
+	\end{itemize}
+\end{frame}
+
+{
+\usebackgroundtemplate{\transparent{0.4}\includegraphics[width=\paperwidth]{img/radio.jpg}}
+\section{Music Perecption and Cognition}
+}
+
+\begin{frame}{}
+  \begin{quote}
+    What makes us listen to music? How do we perceive structure in music? Why is music so closely tied to our emotions? Why does music move us?
+  \end{quote}
+\end{frame}
+
+\begin{frame}{Music Perception and Cognition}
+  I am interested in people's \alert{perception of structure in music}
+  and my overarching goal is to better understand how musical structure relates to human psychology.
+
+  How music affects us does not only lie in the signal, the acoustical features of music. 
+  We found that it depends on aspects of the \alert{musical style} as well as the \alert{listeners' expertise}
+  how pleasant an acoustically dissonant harmony sounds~\citep{Popescu2019_PleasantnessSensoryDissonance}, 
+  and that the perception of \alert{tonal hierarchies} differs between different musical modalities 
+  (chords vs. scales)~\citep{Herff2021_EvidenceCognitiveTonal}.
+  Currently, I am finalizing the manuscript for a study on the perception of \alert{symmetry} in musical scales~\citep{MossHerff2022}
+
+  I plan to extend this research along two lines: \alert{1)} broadening the scope of structural features and \alert{2)} 
+  widening the cultural range (Templeton grant and potential Totoli project with Ch. Bracks)
+\end{frame}
+
+\begin{frame}{Cultural Evolution}
+  \metroset{block=fill}
+
+  \begin{exampleblock}{Cultural Evolution Society Transformation Fund}
+    \begin{itemize}
+      \item ``Cultural evolution of sacred song: A quantitative case study of transmission processes in Gregorian and Byzantine chant''
+      \item Templeton Foundation; Jan 2023 -- Jun 2024; 90k GBP; notification by March
+      \item Tuomas Eerola (Co-I; Durham), Sally Street (Durham), Bas Cornelissen (UvA), Polykarpos Polykarpidis (Athens),  Patrick Savage (Keio)
+    \end{itemize}
+  \end{exampleblock}
+\end{frame}
+
+%%%%% OLD %%%%%%
+
+\section{Research}
+
+\begin{frame}{Conferences}
+
+  \begin{exampleblock}{Accepted}
+    \begin{itemize}
+      \item ''Reading Music Theory from a Distance: A Corpus Study of the \textit{Thesaurus Musicarum Italicarum}''\\
+       { \small with Coline Métrailler, \emph{Congress of the International Musicological Socitey}}
+       \item ``Revisiting Tong Yun San Gong theory in Chinese music: a corpus study of Chinese folksongs''\\
+      {\small with Shuxin Meng, \emph{Analytical Approaches to World Music 2022}}
+      \end{itemize}  
+  \end{exampleblock}
+
+  \begin{block}{Submitted}
+    \begin{itemize}
+      \item ``midiVERTO: A Web Application to Visualize Tonality in Real Time''\\
+        {\small with Giovanni Affatato and Daniel Harasim, \emph{Mathematics and Computation in Music}}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Conferences}
+  \begin{alertblock}{In preparation}
+    \begin{itemize}
+      \item Phases of the dualism debate\\
+      {\small with Maik Köster, \emph{Jahrestagung der Gesellschaft für Musikforschung}}
+      \item ``Which features help classify Baroque composers with Random Forest?''\\
+      {\small with Philippine des Courtils, \emph{Society for Music Perception and Cognition} (deadline: 15 February 2022) }
+      \item ``Unsupervised Cross-Cultural Inference of Modes''\\ 
+      {\small with Daniel Harasim, \emph{International Society for Music Information Retrieval}}
+      \item Presentation midiVERTO app + new analysis\\
+      {\footnotesize with Daniel Harsim and Giovanni Affatato, \emph{Digital Libraries for Musicology} (deadline: TBA)}
+    \end{itemize}
+  \end{alertblock}
+\end{frame}
+
+\section{Education}
+
+\begin{frame}{Education}
+
+  \begin{block}{Methods and techniques}
+    \begin{itemize}
+      \item Complete \emph{Statistical Rethinking} course 
+      \item Learn more about Cultual Evolution models, either within the Templeton CE scheme, 
+        or independently in collaboration with TE and SS
+      \item Generalized linear mixed models learning path with Steffen Herff
+      \end{itemize}
+  \end{block}
+	
+  \begin{block}{Career development}
+    \begin{itemize}
+      \item Project management
+      \item Leadership skills
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% \begin{frame}{First Frame}
+%   \begin{itemize}
+%   \item text
+%   \item \alert{alert text}
+%   \end{itemize}
+%   \begin{block}{A Block}
+%     with some content
+%   \end{block}
+% \end{frame}
+
+% \begin{frame}{Second Frame}
+%   some text
+%   \begin{exampleblock}{Example}
+%     This is an example
+%   \end{exampleblock}
+% \end{frame}
+
+% \begin{frame}[standout]
+%   Really Important Message!
+% \end{frame}
+
+% \begin{frame}{Blocks}
+% \begin{columns}[T,onlytextwidth]
+%   \column{0.5\textwidth}
+%     \begin{block}{Default}
+%       Block content.
+%     \end{block}
+
+%     \begin{alertblock}{Alert}
+%       Block content.
+%     \end{alertblock}
+
+%     \begin{exampleblock}{Example}
+%       Block content.
+%     \end{exampleblock}
+
+%   \column{0.5\textwidth}
+
+%     \metroset{block=fill}
+
+%     \begin{block}{Default}
+%       Block content.
+%     \end{block}
+
+%     \begin{alertblock}{Alert}
+%       Block content.
+%     \end{alertblock}
+
+%     \begin{exampleblock}{Example}
+%       Block content.
+%     \end{exampleblock}
+
+% \end{columns}
+% \end{frame}
+
+% % the `fragile` option is necessary to use external code in beamer
+% \begin{frame}[fragile]{Music notation}
+%   This is very small inline music notation \lilypond[staffsize=6]{c' d' g'}.
+
+%   And this is a music environment: 
+
+% \begin{lilypond}
+%   \relative c' {c d e }
+% \end{lilypond}
+% \end{frame}
+
+% \begin{frame}{References}
+%   Citing an article \citep{YustGeometryMelodicHarmonic2009}.
+% \end{frame}
+
+\begin{frame}{References}
+  \footnotesize
+  \printbibliography
+\end{frame}
+
+\end{document}
+% Local Variables:
+% TeX-engine: luatex
+% TeX-command-extra-options: "-shell-escape"
+% End:

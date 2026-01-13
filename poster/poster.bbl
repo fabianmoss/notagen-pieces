@@ -1,0 +1,76 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{YustGeometryMelodicHarmonic2009}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=4b40b00e0a47680aee88c08a5efb1f93}{%
+           family={Yust},
+           familyi={Y\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=9234000a1ec5e037cf1f9b73d07003a3}{%
+           family={Chew},
+           familyi={C\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e2fa25aca3c4f34fb813c3ee7179ecbc}{%
+           family={Childs},
+           familyi={C\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+        {{hash=04c561f6e01e10258f85688603424a0c}{%
+           family={Chuan},
+           familyi={C\bibinitperiod},
+           given={Ching-Hua},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b40b00e0a47680aee88c08a5efb1f93}
+      \strng{fullhash}{4b40b00e0a47680aee88c08a5efb1f93}
+      \strng{bibnamehash}{4b40b00e0a47680aee88c08a5efb1f93}
+      \strng{authorbibnamehash}{4b40b00e0a47680aee88c08a5efb1f93}
+      \strng{authornamehash}{4b40b00e0a47680aee88c08a5efb1f93}
+      \strng{authorfullhash}{4b40b00e0a47680aee88c08a5efb1f93}
+      \strng{editorbibnamehash}{1c5a78cef613bfa2916519e5bcf6cba2}
+      \strng{editornamehash}{1c5a78cef613bfa2916519e5bcf6cba2}
+      \strng{editorfullhash}{1c5a78cef613bfa2916519e5bcf6cba2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Mathematics and {{Computation}} in {{Music}}}
+      \field{langid}{english}
+      \field{series}{Communications in {{Computer}} and {{Information Science}}}
+      \field{title}{The {{Geometry}} of {{Melodic}}, {{Harmonic}}, and {{Metrical Hierarchy}}}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{180\bibrangedash 192}
+      \range{pages}{13}
+      \verb{file}
+      \verb /home/chfin/Zotero/storage/A6ESZ97K/Yust - 2009 - The Geometry of Melodic, Harmonic, and Metrical Hi.pdf
+      \endverb
+      \keyw{Harmonic Structure,Music Theory,Parking Function,Rhythmic Structure,Tonal Pattern}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
