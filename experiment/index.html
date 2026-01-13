@@ -72,7 +72,8 @@
           <p>If you think the music was composed by a <strong>Human</strong>, press <strong>H</strong>.</p>
           <p>If you think the music was composed by <strong>Artificial Intelligence</strong>, press <strong>A</strong>.</p>
           <p>Press any key to begin.</p>
-        `
+        `,
+        post_trial_gap: 1000
       });
 
       // --- Audio files ---
@@ -147,7 +148,8 @@
               timestamp: timestamp
             };
           },
-          response_ends_trial: true
+          response_ends_trial: true,
+          post_trial_gap: 500,
         });
       }
 
