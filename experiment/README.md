@@ -22,10 +22,8 @@ ls data/A | grep xml | sed 's|^|\"data/|; s|$|\",|'
 
 ## Todo
 
-- Übungsphase einbauen
 - Hören vom Bewerten trennen 
 - Aktuelle Datein (tempi!)
-- Pausen zwischen Trials 
 - ? Wiederholung möglich? 
 ```
 
