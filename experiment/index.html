@@ -71,7 +71,8 @@
           <p>You will hear a few short musical phrases with a harpsichord sound.</p>
           <p>If you think the music was composed by a <strong>Human</strong>, press <strong>H</strong>.</p>
           <p>If you think the music was composed by <strong>Artificial Intelligence</strong>, press <strong>A</strong>.</p>
-          <p>Press any key to begin.</p>
+          <p>First, you can test how the experiment works.</p>
+          <p>Press any key to begin the test.</p>
         `,
         post_trial_gap: 1000
       });
@@ -141,9 +142,10 @@
         prompt: `<h2>Test phase</h2>
         <p>Was this composed by a human (<strong>H</strong>) or AI (<strong>A</strong>)?</p>
           `,
-        data: {correct: first_trial.label},
+        data: {correct: first_trial.label, training: true},
         on_finish: function(data) {
-          data.correct_response = data.response?.toLowerCase() === data.correct;
+          data.correct_response = data.response?.toLowerCase() === first_trial.label;
+          console.log(data.response, first_trial.label);
         }
       };
 
@@ -152,7 +154,7 @@
         stimulus: function() {
           const last_trial = jsPsych.data.get().last(1).values()[0];
 
-          if (last_trial.correc_response) {
+          if (last_trial.correct_response) {
             return `<h2 style='color:green;'>Correct!</h2>
               <p>Now you know how this works.</p>
               <p>Press SPACE to start the experiment!</p>`;
@@ -182,7 +184,8 @@
           data: function() {
             return {
               correct: trial_info.label,
-              timestamp: timestamp
+              timestamp: timestamp,
+              training: false
             };
           },
           response_ends_trial: true,
@@ -195,12 +198,20 @@
         type: jsPsychHtmlKeyboardResponse,
         stimulus: function() {
           const trials = jsPsych.data.get()
-            .filter({trial_type:'audio-keyboard-response'})
+            .filter({trial_type:'audio-keyboard-response', training:false})
             .values();
 
           const correct_trials = trials.filter(t => t.response?.toLowerCase() === t.correct?.toLowerCase()).length;
           const total_trials = trials.length;
           const accuracy = Math.round((correct_trials / total_trials) * 100);
+
+          return `
+              <h2>Thank you for participating!</h2>
+            <p>Your score: ${correct_trials} / ${total_trials} (${accuracy}%) correct</p>
+            <p>Press any key to finish the experiment and download the data.</p>
+            `;
+          },
+        on_finish: function() {
 
           // Save CSV including participant_id
           const csv = jsPsych.data.get()
@@ -214,13 +225,6 @@
           a.download = `results_${timestamp}.csv`
           a.click();
           URL.revokeObjectURL(url);
-
-          return `
-            <h2>Thank you for participating!</h2>
-            <p>Your score: ${correct_trials} / ${total_trials} (${accuracy}%) correct</p>
-            <p>Your results have been saved.</p>
-            <p>Press any key to finish.</p>
-          `;
         }
       };
       timeline.push(final_screen);
