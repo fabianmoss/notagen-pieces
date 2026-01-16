@@ -82,7 +82,10 @@
       // instrument? chor? (wie lange)
 
       // --- Test files ---
-      // "data/A/output48-2.wav",
+      var test_files = [
+        "data/H/"
+      ];
+      var test_files_shuffled = jsPsych.randomization.shuffle(test_files);
 
       // --- Audio files ---
       var audio_files = [];
@@ -90,6 +93,7 @@
       var human_files = [
         "data/H/122.6-4.wav",
         "data/H/148.6-6.wav",
+        "data/H/153.5-3.wav",
         // "data/H/175.5-5.wav",
         // "data/H/227.11-5.wav",
         // "data/H/244.15-6.wav",
@@ -114,6 +118,7 @@
       var ai_files = [
         "data/A/output10-6.wav",
         "data/A/output14-6.wav",
+        "data/A/output48-2.wav",
         // "data/A/output16-1.wav",
         // "data/A/output19-1.wav",
         // "data/A/output21-1.wav",
@@ -138,22 +143,14 @@
       // Shuffle
       var shuffled_files = jsPsych.randomization.shuffle(audio_files);
 
-     // Training phase
-      var first_trial = shuffled_files.shift();
+      var human_pool = shuffled_files.filter(f => f.label === "h");
+      var ai_pool = shuffled_files.filter(f => f.label === "a");
 
-      var training_audio = {
-        type: jsPsychAudioKeyboardResponse,
-        stimulus: first_trial.file,
-        choices: ["a", "h"],
-        prompt: `<h2>Test phase</h2>
-        <p>Was this composed by a human (<strong>H</strong>) or AI (<strong>A</strong>)?</p>
-          `,
-        data: {correct: first_trial.label, training: true},
-        on_finish: function(data) {
-          data.correct_response = data.response?.toLowerCase() === first_trial.label;
-          console.log(data.response, first_trial.label);
-        }
-      };
+      const training_human = jsPsych.randomization.sampleWithoutReplacement(human_pool, 1)[0];
+      const training_ai = jsPsych.randomization.sampleWithoutReplacement(ai_pool, 1)[0];
+
+      const training_trials = jsPsych.randomization.shuffle([training_human, training_ai]);
+      shuffled_files = shuffled_files.filter(f => f !== training_human && f !== training_ai);
 
       var training_feedback = {
         type: jsPsychHtmlKeyboardResponse,
@@ -163,18 +160,53 @@
           if (last_trial.correct_response) {
             return `<h2 style='color:green;'>Correct!</h2>
               <p>Now you know how this works.</p>
-              <p>Press SPACE to start the experiment!</p>`;
+              <p>Press SPACE to continue.</p>`;
           } else {
             return `<h2 style='color:red;'>Unfortunately not correct.</h2>
               <p>But now you know how this works.</p>
-              <p>Press SPACE to start the experiment!</p>`;
+              <p>Press SPACE to continue.</p>`;
           };
           },
         choices: [" "],
         post_trial_gap: 500
         };
-      timeline.push(training_audio);
-      timeline.push(training_feedback);
+
+     // Training phase
+      training_trials.forEach(trial_info => {
+        timeline.push({
+          type: jsPsychAudioKeyboardResponse, 
+          stimulus: trial_info.file, 
+          choices: ["a", "h"],
+                prompt: `<h2>Test phase</h2>
+      <p>Was this composed by a human (<strong>H</strong>) or AI (<strong>A</strong>)?</p>
+        `,
+          data: { correct: trial_info.label, training: true },
+          on_finish: function(data) {
+            data.correct_response = data.response?.toLowerCase() === data.correct;
+            console.log(data.response, trial_info.label);
+          }
+        });
+        timeline.push(training_feedback);
+      });
+
+      // var first_trial = shuffled_files.shift();
+
+      // var training_audio = {
+      //   type: jsPsychAudioKeyboardResponse,
+      //   stimulus: first_trial.file,
+      //   choices: ["a", "h"],
+      //   prompt: `<h2>Test phase</h2>
+      //   <p>Was this composed by a human (<strong>H</strong>) or AI (<strong>A</strong>)?</p>
+      //     `,
+      //   data: {correct: first_trial.label, training: true},
+      //   on_finish: function(data) {
+      //     data.correct_response = data.response?.toLowerCase() === first_trial.label;
+      //     console.log(data.response, first_trial.label);
+      //   }
+      // };
+
+      // timeline.push(training_audio);
+      // timeline.push(training_feedback);
 
       // --- Audio trials ---
       for (let i = 0; i < shuffled_files.length; i++) {
